@@ -32,7 +32,7 @@
     "look": {
         "description": "Look at an object, room or another person",
         "format": "<command> <object>",
-        "aliases": ["see"]
+        "aliases": ["see","view"]
     },
     "search": {
         "description": "Search an open object, or a room you are in to find hidden objects",
@@ -87,16 +87,6 @@
     "character": {
         "description": "View your character",
         "format": "<command>",
-        "aliases": ["stats","skills"],
-    },
-    "inventory": {
-        "description": "View your inventory",
-        "format": "<command>",
-        "aliases": ["bags","storage"],
-    },
-    "map": {
-        "description": "View your map",
-        "format": "<command>",
-        "aliases": [],
+        "aliases": ["stats","skills"]
     }
 }

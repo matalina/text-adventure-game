@@ -71,4 +71,9 @@ class CommandParser
 
         return $parsed;
     }
+
+    public function get()
+    {
+        return $this->commands;
+    }
 }

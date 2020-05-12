@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('commands/parse', 'CommandController@parse')
+Route::post('commands', 'CommandController@parse')
     ->name('commands.parse');
+
+Route::get('commands', 'CommandController@index')
+    ->name('commands.list');
 
 
 

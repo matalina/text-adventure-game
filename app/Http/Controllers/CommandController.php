@@ -13,10 +13,14 @@ class CommandController extends Controller
     {
         $this->parser = $parser;
     }
+
+    public function index()
+    {
+        return $this->parser->get();
+    }
+
     public function parse(ParseCommandRequest $request)
     {
-        $command = $this->parser->parse($request->get('command'));
-
-        return $command;
+        return $this->parser->parse($request->get('command'));
     }
 }
