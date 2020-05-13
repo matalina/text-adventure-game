@@ -4,8 +4,6 @@ namespace Tests\Feature;
 
 use App\Exceptions\InvalidCommandException;
 use App\Services\CommandParser;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class ParseCommandTest extends TestCase
