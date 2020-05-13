@@ -55,6 +55,10 @@ class Handler extends ExceptionHandler
             return response()->json(['error' => $exception->getMessage()], $exception->getCode());
         }
 
+        if ($exception instanceof RoomDoesNotExistException) {
+            return response()->json(['error' => $exception->getMessage()], $exception->getCode());
+        }
+
         return parent::render($request, $exception);
     }
 }

@@ -20,6 +20,9 @@ Route::post('commands', 'CommandController@parse')
 Route::get('commands', 'CommandController@index')
     ->name('commands.list');
 
+Route::get('rooms/{room}', 'RoomController@show')
+    ->name('commands.show');
+
 
 
 Route::fallback(function(){
