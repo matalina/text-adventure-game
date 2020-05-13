@@ -10,14 +10,11 @@ A homegrown engine for building text adventure/interactive fiction games for you
 ## Data structures
 ### Commands
 An object of commands with the verb as the key.
-```json
-{
-  "move": {
-        "description": "Move in a given direction, or to a specific room.",
-        "format": "<command> <object>",
-        "aliases": ["go", "walk", "run"]
-    }
-}
+```yaml
+move:
+    description: Move in a given direction, or to a specific room.
+    format: <command> <object>
+    aliases: [go, walk, run]
 ```
 ### Rooms
 A markdown file with filename convention ```room_<id number>.md``` and yaml front matter for parameters.
