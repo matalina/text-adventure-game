@@ -71,4 +71,12 @@ character:
     description: View your character
     format: <command>
     aliases: [stats,skills]
+inventory:
+    description: View your inventory
+    format: <command>
+    aliases: [bags,gear]
+map:
+    description: View the current map
+    format: <command>
+    aliases: [world,path]
 ---

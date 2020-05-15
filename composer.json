@@ -19,6 +19,7 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "league/commonmark": "^1.4",
+        "livewire/livewire": "^1.0",
         "mnapoli/front-yaml": "^1.6",
         "pusher/pusher-php-server": "^4.1"
     },
