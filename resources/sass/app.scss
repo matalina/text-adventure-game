@@ -1,1 +1,90 @@
-//
+@import "tailwindcss/base";
+
+h1 {
+    @apply font-bold text-4xl font-display;
+}
+h2 {
+    @apply font-bold text-3xl font-display;
+}
+h3 {
+    @apply font-bold text-2xl font-display;
+}
+h4 {
+    @apply font-bold text-xl font-display;
+}
+h5 {
+    @apply font-bold text-lg font-display;
+}
+h6 {
+    @apply font-bold font-display;
+}
+p {
+    @apply pb-5;
+}
+ul, ol {
+    @apply pb-5;
+}
+
+.command {
+    @apply font-mono text-red-500;
+}
+strong {
+    @apply text-orange-600 font-extrabold font-mono;
+}
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.display {
+    display: grid;
+
+    grid-template-areas:
+        "header"
+        "content"
+        "command"
+        "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-gap: 0px;
+
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: content;
+    overflow-y: scroll;
+}
+
+aside {
+    grid-area: command;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.choices {
+    .choice {
+        display: inline-block;
+        &:nth-child(2n-1) span {
+            float: left;
+        }
+
+        &:nth-child(2n) span {
+            float: right
+        }
+    }
+    .choice-display {
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        margin-top: -5rem;
+        margin-left: -5rem;
+        width: 10rem;
+    }
+}
