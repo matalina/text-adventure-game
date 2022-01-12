@@ -23,7 +23,7 @@
         "axios": "^0.19",
         "gray-matter": "^4.0.2",
         "lodash": "^4.17.13",
-        "markdown-it": "^10.0.0",
+        "markdown-it": "^12.3.2",
         "moment": "^2.25.3",
         "vue": "^2.6.11",
         "vuex": "^3.4.0",
